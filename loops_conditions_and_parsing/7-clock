@@ -1,15 +1,13 @@
 #!/usr/bin/env bash
 #um
-echo "hour: 0"
-hour=1
-
+hour=0
 while [ $hour -le 12 ]; do
+	echo "hour: $hour"
 	minute=1
 	while [ $minute -le 59 ]; do
-		printf "%02d\n" $minute
+		printf "%d\n" $minute
 		((minute++))
 	done
-	echo "hour: $hour"
 	((hour++))
 done
 minute=1
