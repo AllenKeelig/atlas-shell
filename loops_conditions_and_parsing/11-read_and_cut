@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 #comment
 while IFS=':' read -r username _ uid _ _ home_dir _; do
-    # Display username, UID, and home directory
-    printf "Username: %-15s  UID: %-5s  Home Directory: %s\n" "$username" "$uid" "$home_dir"
+    echo "$username:$uid:$home_dir"
 done < /etc/passwd
-
