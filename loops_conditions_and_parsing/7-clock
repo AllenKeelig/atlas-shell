@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #um
-echo "hour=0"
+echo "hour: 0"
 hour=1
 
 while [ $hour -le 12 ]; do
@@ -9,7 +9,7 @@ while [ $hour -le 12 ]; do
 		printf "%02d\n" $minute
 		((minute++))
 	done
-	echo "hour=$hour"
+	echo "hour: $hour"
 	((hour++))
 done
 minute=1
