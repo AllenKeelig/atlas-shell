@@ -10,8 +10,3 @@ while [ $hour -le 12 ]; do
 	done
 	((hour++))
 done
-minute=1
-while [ $minute -le 59 ]; do
-    printf "%02d\n" $minute
-    ((minute++))
-done
