@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Change directory to the current directory
+cd "$(dirname "$0")"
+for file in *; do
+    if [[ -f "$file" ]]; then
+        name_after_first_dash=$(echo "$file" | cut -d'-' -f2-)
+        echo "$name_after_first_dash"
+    fi
+done
