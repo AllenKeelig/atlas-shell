@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Change directory to the current directory
-cd "$(dirname "$0")"
+cd "$(dirname "$0")" || exit
 for file in *; do
     if [[ -f "$file" ]]; then
         name_after_first_dash=$(echo "$file" | cut -d'-' -f2-)
