@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#comment
 # Set IFS (Internal Field Separator) to colon for parsing /etc/passwd entries
 IFS=":"
 
